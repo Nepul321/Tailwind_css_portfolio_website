@@ -1,0 +1,17 @@
+{
+  "name": "tailwind-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website with tailwind css",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwind build src/style.css -o dist/style.css"
+  },
+  "author": "Nepul Kahandawa",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {
+    "tailwind-scroll-behavior": "^1.0.0"
+  }
+}

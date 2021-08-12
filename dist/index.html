@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+<nav class="bg-gray-800">
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="relative flex items-center justify-between h-16">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="hidden sm:block sm:ml-6">
+          <div class="flex space-x-4">
+            <a href="" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+
+            <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+
+            <a href="#contact" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sm:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+      <a href="" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+
+      <a href="#about" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+    </div>
+  </div>
+</nav>
+<header class="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500  text-center text-white py-32" style="height: 50vh;">
+  <h1 class="text-3xl ">Hello! I am Nepul Kahandawa</h1>
+  <p class="my-5 text-xl">Full stack web developer</p>
+</header>
+<section id="about" class="bg-gradient-to-r from-purple-500 via-blue-400 to-pink-300  text-center text-white py-12" style="height: auto;">
+<h1 class="text-3xl">About</h1>
+    <div class="container text-justify my-4">
+      <img src="https://res.cloudinary.com/dhlqqrm9f/image/upload/v1627600400/Portfolio-react/images/coding_unzwia.jpg" class="object-cover h-72 w-full"/>
+      <p class="my-5">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+        publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+</section>
+<section id="contact" class="bg-gradient-to-r from-blue-800 via-green-600 to-yellow-400  text-center py-32 px-4"  style="height: auto;">
+  <div class="w-full">
+    <h2 class="text-center text-white font-bold text-2xl uppercase mb-10">Contact me</h2>
+    <div class="bg-white p-10 rounded-lg shadow md:w-3/4 mx-auto lg:w-1/2">
+      <form action="" id="form">
+        <div class="mb-5">
+          <label for="name" class="block mb-2 font-bold text-gray-600">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" class="border border-gray-300 shadow p-3 w-full rounded mb-5 text-grey-300" required autocomplete="off">
+        </div>
+
+        <div class="mb-5">
+          <label for="email" class="block mb-2 font-bold text-gray-600">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" class="border border-gray-300 shadow p-3 w-full rounded mb-5" required autocomplete="off">
+        </div>
+
+        <div class="mb-5">
+          <label for="message" class="block mb-2 font-bold text-gray-600">Message</label>
+          <textarea cols="40" rows="10" id="message" name="message" placeholder="Your message" class="border border-gray-300 shadow p-3 w-full rounded mb-5" required></textarea>
+        </div>
+
+        <div class="mb-5">
+          <label for="letters" class="block mb-2 font-bold text-gray-600"><center><img src="/images/letters.jpg" /></center></label>
+          <input id="letters" name="letters" placeholder="Enter the letters above" class="border border-gray-300 shadow p-3 w-full rounded mb-5" required autocomplete="off"/>
+        </div>
+
+        <button class="block w-full bg-blue-500 text-white font-bold p-4 rounded-lg">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+  </body>
+  <script src="script.js"></script>
+</html>
